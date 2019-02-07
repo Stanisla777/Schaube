@@ -369,3 +369,10 @@ p {
   transition: box-shadow 200ms linear 0ms;
 }
 /*Форма*/
+.h1-title {
+  font-size: 24px;
+}
+.h2-title,
+.h3-title {
+  font-size: 18px;
+}
