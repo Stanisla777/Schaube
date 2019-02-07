@@ -20,19 +20,17 @@ body {
   height: auto;
   min-height: 100%;
 }
-
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
-
-.wrap{
+.wrap {
   position: relative;
   width: 100%;
   padding-bottom: 100px;
 }
-.container{
+.container {
   position: relative;
   max-width: 1200px;
   padding-left: 15px;
@@ -41,282 +39,333 @@ html {
   border-left: 1px solid;
   border-right: 1px solid;
 }
-h1{
+h1 {
   font-size: 24px;
   color: #575b71;
   margin-top: 30px;
 }
-h2,h3{
-
+h2,
+h3 {
   font-weight: 600;
   color: #575b71;
   font-size: 18px;
   margin-top: 10px;
 }
-img{
+img {
   max-width: 100%;
   height: auto;
 }
-p{
+p {
   padding: 0 0 12px 0;
 }
 /*Первый блок*/
-
-.about-schaub{
+.about-schaub {
   display: flex;
   align-items: center;
   margin-top: 20px;
-  &__description{
-    width: 70%;
-    margin-right: 25px;
+}
+.about-schaub__description {
+  width: 70%;
+  margin-right: 25px;
+}
+.about-schaub__img {
+  position: relative;
+  width: calc(100% - 70% - 25px);
+  min-width: 320px;
+}
+.about-schaub__img-item {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
   }
-  &__img{
-    position: relative;
-    width: calc(100% - 70% - 25px);
-
-
-  }
-  &__img-item{
-    width: 100%;
-    background: url("../img/HistoryImg16.JPG")center no-repeat;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    &::before{
-      content: "";
-      display: block;
-      padding-top: 80%;
-    }
-  }
-
+}
+.about-schaub__img-item::before {
+  content: "";
+  display: block;
+  padding-top: 80%;
 }
 
-.reason-purchase__item{
-  margin-top: 40px;
+
+.wrapper-reason-purchase .row-4-column {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.wrapper-reason-purchase .row-4-column__col {
+  position: relative;
+  width: calc(25% - 50px);
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
-.reason-purchase{
+
+
+
+
+
+.reason-purchase__item {
+  margin-top: 40px;
+  //display: flex;
+  //align-items: center;
+  //justify-content: space-around;
+}
+.reason-purchase {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  p{
-    padding: 0;
-    width: 70%;
-    text-align: center;
-  }
-  &__icon{
-    width: 70px;
-    margin-bottom: 20px;
-    height: 70px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
+}
+.reason-purchase p {
+  padding: 0;
+  width: 70%;
+  text-align: center;
+}
+.reason-purchase__icon {
+  width: 70px;
+  margin-bottom: 20px;
+  height: 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.section-home-appliances{
+
+.section-home-appliances {
   margin-top: 70px;
 }
-
-
-@margin:15px;
-.row-4-column{
+.section-home-appliances .row-4-column {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -@margin;
-  margin-right:-@margin;
+  margin-left: -15px;
+  margin-right: -15px;
 }
-
-.row-4-column__col {
+.section-home-appliances .row-4-column__col {
   position: relative;
-  width: calc(100%/4 - @margin*2);
-  margin-left: @margin;
-  margin-right: @margin;
+  width: calc(25% - 50px);
+  margin-left: 15px;
+  margin-right: 15px;
 }
-
-
-.wrapper-home-appliances{
+.wrapper-home-appliances {
   margin-top: 20px;
-  //margin-bottom: 15px;
-  &__item{
-    padding: 30px 10px 40px 10px;
-    box-shadow: 0 0 5px 2px #c7c3c3;
-    background-color: rgba(199, 193, 193, 0.1);
-    margin-bottom: 30px;
-  }
-  &__img{
-    position: relative;
-    width: 80%;
-    margin: 0 auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    &:before{
-      content: "";
-      display: block;
-      padding-top: 80%;;
-    }
-  }
-  &__description{
-    text-align: center;
-    margin-top: 20px;
-    font-size: 22px;
-  }
 }
-.section-company-advantages{
-
+.wrapper-home-appliances__item {
+  padding: 30px 10px 40px 10px;
+  box-shadow: 0 0 5px 2px #c7c3c3;
+  background-color: rgba(199, 193, 193, 0.1);
+  margin-bottom: 30px;
 }
-.advantages-item{
+.wrapper-home-appliances__img {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.wrapper-home-appliances__img:before {
+  content: "";
+  display: block;
+  padding-top: 80%;
+}
+.wrapper-home-appliances__description {
+  text-align: center;
+  font-size: 22px;
+  width: 90%;
+  margin: 20px auto 0!important;
+  padding: 0!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+.advantages-item {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 40px;
-  &__img{
-    img{
-      height: 100%;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-    }
-    margin-left: -21px;
-    position: relative;
-    z-index: 1;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: calc(100% - 50%);
+}
+.advantages-item__img {
+  //margin-left: -21px;
+  position: relative;
+  z-index: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: calc(100% - 50%);
+  flex-shrink: 0;
+}
+.advantages-item__img img {
 
-    flex-shrink: 0;
-    &:before{
-      content: "";
-      display: block;
-      padding-top: 77%;
-    }
-
-  }
-  &__description{
-    p{
-      line-height: 22px;
-    }
-    h3{
-      margin-bottom: 20px;
-    }
-    position: relative;
-    margin-left: -20px;
-    z-index: 2;
-    background: #fff;
-    width: 50%;
-    box-shadow: 0 0 5px 3px #a19e9e;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+  height: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.advantages-item__img:before {
+  content: "";
+  display: block;
+  padding-top: 77%;
+}
+.advantages-item__description {
+  position: relative;
+  margin-left: -20px;
+  z-index: 2;
+  background: #fff;
+  width: 50%;
+  box-shadow: 0 0 5px 3px #a19e9e;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.advantages-item__description p {
+  line-height: 22px;
+}
+.advantages-item__description h3 {
+  margin-bottom: 20px;
 }
 
 
-.section-how-buy{
+
+
+
+
+
+
+
+
+
+
+
+
+.section-how-buy {
   margin-top: 50px;
 }
-
-
-.wrapper-how-buy{
+.wrapper-how-buy {
   display: flex;
   align-items: center;
   margin-top: 30px;
-  &__img{
-    width: 30%;
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    &:before{
-      content: "";
-      display: block;
-      padding-top: 100%;
-    }
-    //height: 480px;
-    border: 1px solid;
-    margin-right: 50px;
-    flex-shrink: 0;
-  }
-  &__description{
-    h3{
-      margin-bottom: 20px;
-      font-size: 16px;
-    }
-  }
-  &__list{
-    list-style: none;
-    li{
-      display: flex;
-      position: relative;
-      &:not(:last-child){
-        margin-bottom: 20px;
-      }
-      &:before{
-        content: "";
-        display: block;
-        width: 16px;
-        height: 16px;
-        //border:1px solid red;
-        background-color: #bdb7b7;
-        margin-right: 20px;
-        border-radius: 50%;
-        flex-shrink: 0;
-        margin-top: 3px;
-      }
-
-    }
-  }
-  &__mark-buyer{
-    width: 80%;
-    margin: 30px auto 0;
-    padding: 20px;
-    box-shadow: 0 0 4px 1px #dcd7d7;
-    background: rgba(232, 228, 228, 0.1);
-    border-radius: 5px;
-    p{
-      line-height: 23px;
-    }
-    p:last-child{
-      padding: 0;
-    }
-  }
+}
+.wrapper-how-buy__img {
+  width: 30%;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 50px;
+  flex-shrink: 0;
+  border-radius: 9px;
+}
+.wrapper-how-buy__img:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
 }
 
-.section-kitchen-equipment{
+.wrapper-how-buy__description p {
+  /*padding: 0!important;*/
+}
+.wrapper-how-buy__description h3 {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.wrapper-how-buy__list {
+  list-style: none;
+  line-height: normal!important;
+  padding: 0!important;
+}
+.wrapper-how-buy__list li {
+  display: flex;
+  position: relative;
+}
+.wrapper-how-buy__list li:not(:last-child) {
+  margin-bottom: 13px;
+}
+.wrapper-how-buy__list li:before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: #bdb7b7;
+  margin-right: 20px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+.wrapper-how-buy__mark-buyer {
+  width: 80%;
+  margin: 30px auto 0;
+  padding: 20px;
+  box-shadow: 0 0 4px 1px #dcd7d7;
+  background: rgba(232, 228, 228, 0.1);
+  border-radius: 5px;
+}
+.wrapper-how-buy__mark-buyer p {
+  line-height: 23px;
+}
+.wrapper-how-buy__mark-buyer p:last-child {
+  padding: 0!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section-kitchen-equipment {
   margin-top: 40px;
 }
-.group-kitchen-equipment{
+.group-kitchen-equipment {
   margin-top: 30px;
-  &__item{
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  &__icon{
-    margin-right: 15px;
-    width: 33px;
-    height: 33px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  &__description{
-    padding: 0;
-  }
-
+  margin-bottom: 25px;
+  margin-left: 20px;
+}
+.group-kitchen-equipment__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.group-kitchen-equipment__icon {
+  margin-right: 15px;
+  width: 33px;
+  height: 33px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.group-kitchen-equipment__description {
+  padding: 0;
+}
+.another-list {
+  line-height: 24px;
 }
 
 
@@ -327,53 +376,58 @@ p{
 
 
 
-
-
-
-
-
-
-
+.section-place-purchase {
+  margin-top: 30px;
+}
+.wrapper-place-purchase {
+  width: 100%;
+  margin: 30px auto 0;
+  padding: 20px;
+  box-shadow: 0 0 4px 1px #dcd7d7;
+  background: rgba(232, 228, 228, 0.1);
+  border-radius: 5px;
+  line-height: 24px;
+}
 .responsive-box {
   position: relative;
-  width: 30%; /* Произвольная ширина, которая требуется для блока */
+  width: 30%;
+  /* Произвольная ширина, которая требуется для блока */
 }
 .responsive-box::before {
   content: "";
   display: block;
-  padding-top: 56.52%; /* С помощью этого padding мы задаем пропорцию высоты т ширины */
+  padding-top: 56.52%;
+  /* С помощью этого padding мы задаем пропорцию высоты т ширины */
 }
 
 
+.wrapper-home-appliances{
+  a:focus,
+  a:hover,
+  a:link,
+  a:active {
+    outline: none!important;
+    text-decoration: none!important;
+    outline-width: 0;
+  }
+  a:hover {
+    text-decoration: none!important;
+  }
+  p{
+    color: #101010;
+  }
+}
+
+.wrapper-home-appliances__item {
+  display: block;
+  transition: all 200ms linear 0ms;
+  cursor: pointer;
+}
+.wrapper-home-appliances__item:hover {
+  box-shadow: 0 0 9px 6px #c7c3c3;
+  transition: box-shadow 200ms linear 0ms;
+
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*Форма*/
