@@ -368,11 +368,68 @@ p {
   box-shadow: 0 0 9px 6px #c7c3c3;
   transition: box-shadow 200ms linear 0ms;
 }
-/*Форма*/
 .h1-title {
   font-size: 24px;
 }
 .h2-title,
 .h3-title {
   font-size: 18px;
+}
+/*Форма*/
+.section-capture-form input {
+  position: relative;
+  display: block;
+  padding-left: 20px;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #8184a1;
+  border: 1px solid #dee0ee;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+}
+.section-capture-form input:focus,
+.section-capture-form textarea:focus {
+  outline: none;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
+.wrapper-form {
+  margin-top: 21px;
+}
+.wrapper-form__agree-conditions {
+  margin-bottom: 10px;
+}
+.wrapper-form__info {
+  display: flex;
+}
+.wrapper-form__input {
+  font-family: 'GothamPro', sans-serif;
+  width: 263px;
+  height: 42px;
+  box-shadow: 0 0 5px 1px #a8a4a4;
+  margin-right: 29px;
+  color: #767676;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.wrapper-form__input::-moz-placeholder {
+  color: #767676;
+  font-size: 16px;
+  font-weight: 500;
+}
+.wrapper-form__input::-webkit-input-placeholder {
+  color: #767676;
+  font-size: 16px;
+  font-weight: 500;
+}
+.wrapper-form .button {
+  width: 24%;
+  max-width: 262px;
+  min-width: 263px;
 }
