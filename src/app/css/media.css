@@ -1,6 +1,4 @@
-@media screen and (max-width: 1170px){
 
-}
 
 @media screen and (max-width: 1260px){
     .section-home-appliances .row-4-column{
@@ -9,6 +7,50 @@
 
     .section-home-appliances .row-4-column__col {
         width: calc(36% - 50px);
+    }
+
+    .section-capture-form__input {
+        display: flex;
+        flex-wrap: wrap;
+        width: 78%;
+        justify-content: center;
+        margin: 20px auto 0;
+    }
+
+    .section-capture-form button{
+        width: calc((100% - 180px) / 3);
+        min-width: 280px;
+    }
+    .section-capture-form input:nth-child(2){
+        margin-right: 0;
+    }
+
+    .section-capture-form input{
+        width: 37%;
+    }
+
+
+    .section-capture-form h3{
+        text-align: center;
+    }
+
+    .section-capture-form p{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1130px){
+    .section-capture-form__input{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-capture-form input{
+        margin-right: 0!important;
+        width: 70%;
+    }
+    .section-capture-form button{
+        width: 70%;
     }
 }
 
@@ -29,6 +71,7 @@
         width: 70%;
         margin-left: 0;
     }
+
 
 
 
@@ -73,6 +116,12 @@
     .section-home-appliances .row-4-column__col {
         width: calc(50% - 50px);
     }
+
+}
+
+@media screen and (max-width: 800px){
+
+
 
 }
 @media screen and (max-width: 660px){

@@ -376,47 +376,74 @@ p {
   font-size: 18px;
 }
 /*Форма*/
+.section-capture-form {
+  margin-top: 30px;
+}
+.section-capture-form p {
+  font-size: 16px;
+}
+.section-capture-form h3 {
+  margin-bottom: 10px;
+}
+.section-capture-form__input {
+  display: flex;
+}
 .section-capture-form input {
+  border: 1px solid #8184a1;
+  width: calc((100% - 200px) / 3);
+  min-width: 280px;
+  height: 40px !important;
   position: relative;
   display: block;
   padding-left: 20px;
   outline: none;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  color: #8184a1;
-  border: 1px solid #dee0ee;
+  color: #000;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   -khtml-border-radius: 4px;
   border-radius: 4px;
 }
+.section-capture-form input:not(:last-child) {
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+.section-capture-form button {
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  width: 200px;
+  height: 40px;
+  color: #fff;
+  background: #008d55;
+  background: -moz-linear-gradient(-45deg, #008d55 0%, #63b84f 69%, #63b84f 69%);
+  background: -webkit-linear-gradient(-45deg, #008d55 0%, #63b84f 69%, #63b84f 69%);
+  background: linear-gradient(135deg, #008d55 0%, #63b84f 69%, #63b84f 69%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#008d55', endColorstr='#63b84f', GradientType=1);
+}
+.section-capture-form button:hover {
+  background: #63b84f;
+  background: -moz-linear-gradient(-45deg, #63b84f 0%, #008d55 69%);
+  background: -webkit-linear-gradient(-45deg, #63b84f 0%, #008d55 69%);
+  background: linear-gradient(135deg, #63b84f 0%, #008d55 69%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#63b84f', endColorstr='#008d55', GradientType=1);
+}
 .section-capture-form input:focus,
 .section-capture-form textarea:focus {
   outline: none;
 }
-input:focus,
-textarea:focus {
-  outline: none;
-}
-.wrapper-form {
-  margin-top: 21px;
-}
-.wrapper-form__agree-conditions {
-  margin-bottom: 10px;
-}
-.wrapper-form__info {
-  display: flex;
-}
-.wrapper-form__input {
-  font-family: 'GothamPro', sans-serif;
-  width: 263px;
-  height: 42px;
-  box-shadow: 0 0 5px 1px #a8a4a4;
-  margin-right: 29px;
+.section-capture-form input::-moz-placeholder {
   color: #767676;
   font-size: 16px;
   font-weight: 500;
-  border-radius: 5px;
+}
+.section-capture-form input::-webkit-input-placeholder {
+  color: #767676;
+  font-size: 16px;
+  font-weight: 500;
 }
 .wrapper-form__input::-moz-placeholder {
   color: #767676;
