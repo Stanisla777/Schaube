@@ -152,7 +152,7 @@ gulp.task('watch-all',function(){
 gulp.task('browserSync', function() {
     browserSync.init({
         server: {
-            baseDir: config.src+config.app //корень поднимаего сервера, тоесть корневая папка, где лежит файл index.html
+            baseDir: config.src+config.app //корень поднимаего сервера, тоесть корневая папка, где лежит файл main-page.html
         }
     });
 });
