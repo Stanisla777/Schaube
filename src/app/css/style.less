@@ -79,7 +79,7 @@ p {
 .wrapper-video {
   position: relative;
   box-sizing: border-box;
-  width: 60%;
+  width: 76%;
   padding: 2px;
   //margin: 25px auto 0;
 }
@@ -87,14 +87,14 @@ p {
 .wrapper-video:before {
   content: "";
   display: block;
-  padding-top: 56.2%;
+  padding-top: 64%;
 }
 
 .wrapper-video__video {
 
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: 89% center;
+  background-size: 88%;
   position: absolute;
   top: 0;
   left: 0;
@@ -102,18 +102,19 @@ p {
   right: 0;
   iframe{
     position: absolute;
-    width: 62%;
-    height: 62%;
-    top: 13%;
-    left: 19%;
+    width: 75%;
+    height: 66%;
+    top: 11.3%;
+    left: 15%;
   }
 }
 
 .wrapper-man{
   position: relative;
   box-sizing: border-box;
-  width: 16%;
-  background: url("../img2/ManAndTv4.png")center no-repeat;
+  width: 25%;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: contain;
   &:before{
     content: "";
@@ -122,106 +123,36 @@ p {
   }
 }
 
-.additional-guarante{
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: space-between;
-  &__title{
-    font-size: 21px;
-    font-weight: 600;
-    text-align: center;
-    line-height: 31px;
-    //width: 80%;
-  }
-  &__item{
-    font-size: 17px;
-    /* font-weight: 600; */
-    text-align: center;
-    padding: 0!important;
-    line-height: 24px;
-  }
-  &__description{
-  p{
 
 
 
-    span{
 
-    }
-  }
-  }
-  &__img{
-    width: 49%;
-    min-width: 420px;
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    &::before{
-      content: "";
-      display: block;
-      padding-top: 87%;
-    }
-  }
 
-  &__line-up{
-    top: 60px;
-    left: 117px;
-    width: 43%;
-    height: 50px;
-    border-top-color: #dc3b38;
-    border-top-width: 15px;
-    border-top-style: solid;
-    border-left-color: #dc3b38;
-    border-left-width: 15px;
-    border-left-style: solid;
-   }
 
-  &__line-down{
-    bottom: 60px;
-    left: 117px;
-    width: 43%;
-    height: 50px;
-    border-bottom-color: #dc3b38;
-    border-bottom-width: 15px;
-    border-bottom-style: solid;
 
-    border-left-color: #dc3b38;
-    border-left-width: 15px;
-    border-left-style: solid;
-  }
-  &__icon{
-    width: 100px;
-    height: 100px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    bottom: -39px;
-    left:35%;
-  }
-  &__line{
-    position: absolute;
 
-  }
+.section-sales-offer{
+  margin-top: 60px;
+  padding-bottom: 60px;
 }
-
 .wrapper-form-offer{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.section-sales-offer{
-  margin-top: 60px;
-}
+
 .wrapper-offer{
+  p{
+    font-size: 16px;
+  }
   margin-top: 20px;
   width: 51%;
+  margin-right: 20px;
   ul{
     list-style: none;
     margin-top: 20px;
+    padding-left: 0!important;
     h3{
       text-transform: uppercase;
       font-size: 14px;
@@ -230,17 +161,22 @@ p {
       padding: 0!important;
     }
     li{
-      line-height: 22px;
+      line-height: 20px;
       display: flex;
+      margin-bottom: 14px;
       &:before{
-
+        flex-shrink: 0;
         content: "";
         display: block;
         width: 24px;
         height: 24px;
-        background: url(../img2/IconOfferc.png) center no-repeat;
+        background: url(/upload/main-page/IconOfferc.png) center no-repeat;
         background-size: cover;
         margin-right: 15px;
+      }
+      p{
+        padding: 0!important;
+        margin: 0!important;
       }
     }
   }
@@ -297,7 +233,7 @@ p {
     font-size: 16px;
     border: none;
     border-radius: 7px;
-    width: 88%;
+    width: 93%;
     height: 40px;
     color: #fff;
     outline: none;
@@ -490,6 +426,162 @@ p {
   max-width: 262px;
   min-width: 263px;
 }
+
+/*Гарантия*/
+
+.additional-guarante__description{
+
+}
+
+
+.additional-guarante{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+
+  ul{
+    list-style: none;
+    padding-left: 0;
+    li{
+      display: flex;
+      &:not(:last-child){
+        margin-bottom: 10px;
+      }
+      &:before{
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: url("../img2/IconGarant.png")center no-repeat;
+        background-size: cover;
+        margin-right: 10px;
+      }
+
+    }
+  }
+
+
+  &__title{
+    font-size: 21px;
+    font-weight: 600;
+    //text-align: center;
+    line-height: 31px;
+    //width: 80%;
+  }
+  &__item{
+    font-size: 17px;
+    /* font-weight: 600; */
+    //text-align: center;
+    padding: 0!important;
+    line-height: 24px;
+  }
+  &__description{
+    margin-left: 6%;
+    width: 42%;
+    margin-top: -28px;
+    p{
+
+
+
+      span{
+
+      }
+    }
+  }
+  &__img{
+    width: 48%;
+    min-width: 420px;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    //margin-right: auto;
+    &::before{
+      content: "";
+      display: block;
+      padding-top: 72%;
+    }
+  }
+
+  &__line-up{
+    top: 23px;
+    left: 62px;
+    width: 52%;
+    height: 50px;
+    border-top-color: #dc3b38;
+    border-top-width: 15px;
+    border-top-style: solid;
+    border-left-color: #dc3b38;
+    border-left-width: 15px;
+    border-left-style: solid;
+  }
+
+  &__line-down{
+    bottom: 23px;
+    left: 62px;
+    width: 52%;
+    height: 50px;
+    border-bottom-color: #dc3b38;
+    border-bottom-width: 15px;
+    border-bottom-style: solid;
+
+    border-left-color: #dc3b38;
+    border-left-width: 15px;
+    border-left-style: solid;
+  }
+  &__icon{
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: -39px;
+    left: 8%;
+  }
+  &__line{
+    position: absolute;
+
+  }
+}
+
+.section-video{
+  margin-top: 30px;
+}
+
+
+.h2-title, .h3-title {
+  font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
