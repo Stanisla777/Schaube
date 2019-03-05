@@ -20,7 +20,6 @@ const config = {
         css:'/app/css',
         watch:'/app/css/*.less',
         src: '/app/css/style.less',
-        src_css: '/app/css/media.css',
         img: '/app/img',
         dist: '/dist/css'
     },
@@ -50,7 +49,7 @@ gulp.task('build-css', function () {
 gulp.task('build-html', function () {
     gulp.src(config.src+config.html.src)//выборка файлов по конкретному пути
 
-        //.pipe(gulp.dest(config.src+config.html.src_dist)) //вывод результирующего файла в папку назначения (dest — пункт назначения)
+    //.pipe(gulp.dest(config.src+config.html.src_dist)) //вывод результирующего файла в папку назначения (dest — пункт назначения)
 
         .pipe(browserSync.reload({//пайпим перезагрузку
             stream:true
@@ -87,7 +86,7 @@ gulp.task('preprop', function () {
 gulp.task('build-all', function () {
     gulp.src('./src/app/**/*')//выборка файлов по конкретному пути
 
-        //.pipe(gulp.dest('./src/dist')); //вывод результирующего файла в папку назначения (dest — пункт назначения)
+    //.pipe(gulp.dest('./src/dist')); //вывод результирующего файла в папку назначения (dest — пункт назначения)
         .pipe(gulp.dest(config.src+config.html.src_dist)); //вывод результирующего файла в папку назначения (dest — пункт назначения)
 
 });
@@ -95,36 +94,19 @@ gulp.task('build-all', function () {
 
 ////////////////////////////////////////////////////////
 
-// const config = {
-//     src: './src',
-//     app:'/app',
-//     css: {
-//         css:'/app/css',
-//         watch:'/app/css/*.less',
-//         src: '/app/css/style.less',
-//         src_css: '/app/css/style.css',
-//         img: '/app/img',
-//         dist: '/dist/css'
-//     },
-//     html: {
-//         src: '/app/*.html',
-//         src_dist: '/dist'
-//
-//
-//     }
-// };
+
 
 //Автопрефиксы
 gulp.task('autoprefixer', function () {
-    gulp.src(config.src+config.css.src_css)//выборка файлов по конкретному пути
+    gulp.src('./src/app/css/**/*.css')//выборка файлов по конкретному пути
 
-        //даем префиксы стилям
+    //даем префиксы стилям
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
         }))
 
-        .pipe(gulp.dest(config.src+config.html.src_dist)); //вывод результирующего файла в папку назначения (dest — пункт назначения)
+        .pipe(gulp.dest('./src/dist/css')); //вывод результирующего файла в папку назначения (dest — пункт назначения)
 
 });
 
@@ -152,7 +134,7 @@ gulp.task('watch-all',function(){
 gulp.task('browserSync', function() {
     browserSync.init({
         server: {
-            baseDir: config.src+config.app //корень поднимаего сервера, тоесть корневая папка, где лежит файл main-page.html
+            baseDir: config.src+config.app //корень поднимаего сервера, тоесть корневая папка, где лежит файл index.html
         }
     });
 });
