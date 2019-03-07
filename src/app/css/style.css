@@ -150,6 +150,8 @@ p {
   position: absolute;
   top: 50%;
   color: #d0d1da;
+  text-align: center;
+  line-height: 23px;
   animation: blur 5s ease-out infinite;
 }
 .product-stock-time:before {
@@ -198,12 +200,10 @@ p {
   margin-top: 15px;
 }
 .steps-gift {
-  position: relative;
-  width: 25%;
   padding: 50px 10px 25px 10px;
   box-shadow: 0 0 5px 2px #c7c3c3;
   background-color: rgba(199, 193, 193, 0.1);
-  margin-bottom: 30px;
+  margin-bottom: 14px;
 }
 .steps-gift__img {
   width: 90%;
@@ -258,4 +258,66 @@ p {
 .gift-slogan {
   font-weight: 600;
   font-size: 17px;
+}
+/*Акция номер два*/
+.product-stock-thermos {
+  display: flex;
+  align-items: center;
+}
+.wrapper-product-stock {
+  width: 30%;
+}
+.wrapper-product-stock__item {
+  width: 70%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.wrapper-product-stock__item:before {
+  content: "";
+  display: block;
+}
+.wrapper-product-stock__mik {
+  margin-left: 80px;
+}
+.wrapper-product-stock__mik:before {
+  padding-top: 60%;
+}
+.wrapper-product-stock__elek {
+  margin-left: 80px;
+}
+.wrapper-product-stock__elek:before {
+  padding-top: 60%;
+}
+.wrapper-product-stock__vit {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.wrapper-product-stock__vit:before {
+  padding-top: 76%;
+}
+.wrapper-gift-envelope {
+  width: 20%;
+  margin-top: -60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrapper-gift-envelope:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.wrapper-gift-termos {
+  width: 42%;
+  margin-top: -60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrapper-gift-termos:before {
+  content: "";
+  display: block;
+  padding-top: 49%;
 }
