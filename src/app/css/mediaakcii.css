@@ -16,7 +16,6 @@
     .product-stock-time{
         margin: 15px auto 25px;
     }
-
 }
 @media screen and (max-width: 630px){
     .wrapper-presents{
@@ -29,13 +28,19 @@
         height: 100%;
         max-width: 140%;
     }
+
 }
 
 @media screen and (max-width: 450px) {
     .wrapper-gift-conditions .steps-gift {
         width: calc(78% - 30px);
     }
+    .wrapper-gift-termos{
+        margin-right: 65px;
+    }
 }
+
+
 
 
 

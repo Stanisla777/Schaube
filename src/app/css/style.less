@@ -287,15 +287,15 @@ p {
 .wrapper-gift-conditions .row-4-column{
   display: flex;
   flex-wrap: wrap;
-  margin-left: -@margin;
-  margin-right:-@margin;
+  margin-left: -6px;
+  margin-right: -12px;
 }
 
 .wrapper-gift-conditions .row-4-column__col {
   position: relative;
-  width: calc(100%/4 - @margin*2);
-  margin-left: @margin;
-  margin-right: @margin;
+  width: calc(23% - 8px*2);
+  margin-left: 7px;
+  margin-right: 7px;
 }
 
 .shopping-wish{
@@ -311,19 +311,115 @@ p {
 
 
 
-/*Акция номер два*/
 
-.product-stock-thermos {
+
+
+/*Акция 3*/
+
+/*Класс, который не повторяется*/
+.product-stock-dishes{
+  margin-top: 50px;
   display: flex;
   align-items: center;
-}
-.wrapper-product-stock{
-  width: 30%;
+  justify-content: space-around;
+  &__wrapper{
+    width: 22%;
+    min-width: 100px;
+  }
   &__item{
-    width: 70%;
+    width: 100%;
     position: relative;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
+    &:before{
+      content: "";
+      display: block;
+      padding-top: 100%;
+    }
+  }
+  &__box{
+    width: 24%;
+    min-width: 110px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    &:before{
+      content: "";
+      display: block;
+      padding-top: 100%;
+    }
+
+    img:first-child{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+    img:nth-child(2){
+      position: absolute;
+      width: 73%;
+      height: auto;
+      left: 13%;
+      right: 0;
+      top: 38%;
+      bottom: 0;
+    }
+  }
+
+  &__gift{
+    width: 80%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    &:before{
+      content: "";
+      display: block;
+      padding-top: 100%;
+    }
+  }
+
+  &__arrow{
+    width: 20%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    &:before{
+      content: "";
+      display: block;
+      padding-top: 100%;
+    }
+  }
+
+}
+
+
+/*Акция номер два*/
+
+/*Класс, который не повторяется*/
+
+.product-stock-thermos {
+  //display: flex;
+  //align-items: center;
+}
+.wrapper-product-stock{
+  width: 100%;
+  min-width: 100px;
+  display: flex;
+  justify-content: space-around;
+  &__item{
+    width: 27%;
+
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
     background-position: center;
     &:before{
       content: "";
@@ -332,20 +428,18 @@ p {
     }
   }
   &__mik{
-    margin-left: 80px;
     &:before{
       padding-top: 60%;
     }
   }
   &__elek{
-    margin-left: 80px;
     &:before{
       padding-top: 60%;
     }
   }
   &__vit{
-    margin-top: 25px;
-    margin-bottom: 25px;
+    position: relative;
+    top: 20px;
     &:before{
       padding-top: 76%;
     }
@@ -366,15 +460,18 @@ p {
 }
 
 .wrapper-gift-termos{
-  width: 42%;
-  margin-top: -60px;
+  width: 50%;
+  min-width: 220px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-left: auto;
+  margin-right: 120px;
+  margin-top: 60px;
   &:before{
     content: "";
     display: block;
-    padding-top: 49%;
+    padding-top: 55%;
   }
 }
 
