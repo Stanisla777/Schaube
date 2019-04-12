@@ -144,346 +144,221 @@ p {
   background-size: cover;
 }
 
-.product-stock-time{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+
+/*Акция 1*/
+.wrapper-slider-stock-1,.wrapper-slider-stock-2, .wrapper-slider-stock-3{
   position: relative;
-  width: 66%;
-  height: 99px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: 70px auto 50px;
-  &__date{
-    font-size: 22px;
-    padding: 0;
-    position: absolute;
-    top: 50%;
-    color: #d0d1da;
-    text-align: center;
-    line-height: 23px;
-    //text-shadow: 0 0 2px #fff, 0 0 3px #fff;
-    animation:blur 5s ease-out infinite;
-  }
-  &:before{
-    padding-top: 60%;
-  }
-  img{
-    width: 100%;
-    height: 100%;
-
-  }
 }
-
-@keyframes blur{
-  from{
-    text-shadow:0 0 1px rgba(250, 250, 250, 0.03),
-    0 0 2px #969696,
-    0 0 3px #969696,
-    0 0 3px #969696,
-    0 0 3px #969696,
-    0 0 3px #969696,
-    0 0 3px #969696,
-    0 0 3px #969696,
-    0 0 4px #969696,
-    0 0 4px #969696,
-    0 0 4px #7B96B8,
-    0 0 5px #7B96B8,
-    0 2px 6px #7B96B8,
-    0 2px 6px #7B96B8,
-    0 2px 6px #7B96B8,
-    0 2px 6px #7B96B8
-      //0px -10px 100px #7B96B8,
-      //0px -10px 100px #7B96B8;
-  }
-}
-
-.gift-category-list{
-  list-style: none;
-  margin-top: 15px!important;
-  padding: 0!important;
-  li{
-    font-size: 16px;
-    display: flex;
-    margin-bottom: 10px;
-    
-    &:before{
-      content: '';
-      display: block;
-      width: 19px;
-      height: 25px;
-      background: url(../img3/GiftGalka.png) center no-repeat;
-      background-size: contain;
-      margin-right: 6px;
-      flex-shrink: 0;
-    }
-  }
-}
-
-.wrapper-home-appliances__item {
-  padding: 30px 10px 40px 10px;
-  box-shadow: 0 0 5px 2px #c7c3c3;
-  background-color: rgba(199, 193, 193, 0.1);
-  margin-bottom: 30px;
-}
-.wrapper-gift-conditions{
-  margin-top: 30px;
-}
-.wrapper-steps-gift{
-  display: flex;
-  margin-top: 15px;
-
-}
-.steps-gift{
-  padding: 50px 10px 25px 10px;
-  box-shadow: 0 0 5px 2px #c7c3c3;
-  background-color: rgba(199, 193, 193, 0.1);
-  margin-bottom: 14px;
-  &__img{
-    width: 90%;
-    position: relative;
-    margin: 0 auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    &:before{
-      content: "";
-      display: block;
-      padding-top: 90%;
-
-    }
-  }
-  &__description{
-    font-size: 16px;
-    text-align: center;
-    margin-top: 20px!important;
-    padding: 0!important;
-    line-height: 21px;
-    letter-spacing: -0.2px;
-  }
-  &__number{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 5px;
-    left: 50%;
-    margin-left: -21px;
-    width: 43px;
-    height: 43px;
-    background: url(../img3/Obvodka.png) center no-repeat;
-    background-size: contain;
-  }
-}
-
-
-@margin:10px;
-//.margin(@margin){
-//  margin-left: 10px;
-//  margin-right: 10px;
-//}
-
-.wrapper-gift-conditions .row-4-column{
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -6px;
-  margin-right: -12px;
-}
-
-.wrapper-gift-conditions .row-4-column__col {
+#mySlider1, #mySlider2, #mySlider3{
   position: relative;
-  width: calc(23% - 8px*2);
-  margin-left: 7px;
-  margin-right: 7px;
+  /*width: 60%;*/
+  margin: 0 auto;
+  left: 146px;
 }
 
-.shopping-wish{
-  font-size: 20px;
-  font-weight: 600;
+#mySlider1 li, #mySlider2 li, #mySlider3 li {/*Задаем ширину и другие св-ва отдельному слайдеру*/
+  /*padding-top: 70px;*/
+  /*padding-bottom: 105px;*/
+  text-align: center;
+  /*border: 1px solid;*/
+  width: 45%;
+  background: #fff;
 }
 
-.gift-slogan{
-  font-weight: 600;
-  font-size: 17px;
-}
-
-
-
-
-
-
-
-/*Акция 3*/
-
-/*Класс, который не повторяется*/
-.product-stock-dishes{
-  margin-top: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  &__wrapper{
-    width: 22%;
-    min-width: 100px;
-  }
-  &__item{
-    width: 100%;
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    &:before{
-      content: "";
-      display: block;
-      padding-top: 100%;
-    }
-  }
-  &__box{
-    width: 24%;
-    min-width: 110px;
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    &:before{
-      content: "";
-      display: block;
-      padding-top: 100%;
-    }
-
-    img:first-child{
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      z-index: 1;
-    }
-    img:nth-child(2){
-      position: absolute;
-      width: 73%;
-      height: auto;
-      left: 13%;
-      right: 0;
-      top: 38%;
-      bottom: 0;
-    }
-  }
-
-  &__gift{
-    width: 80%;
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    &:before{
-      content: "";
-      display: block;
-      padding-top: 100%;
-    }
-  }
-
-  &__arrow{
-    width: 20%;
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    &:before{
-      content: "";
-      display: block;
-      padding-top: 100%;
-    }
-  }
-
+#mySlider1 a, #mySlider2 a, #mySlider3 a {/*Задаем ширину и другие св-ва отдельному слайдеру*/
+  /*padding-top: 70px;*/
+  /*padding-bottom: 105px;*/
+  text-align: center;
+  /*border: 1px solid;*/
+  width: 45%;
+  background: #fff;
+  display: block;
 }
 
 
-/*Акция номер два*/
-
-/*Класс, который не повторяется*/
-
-.product-stock-thermos {
-  //display: flex;
-  //align-items: center;
+#mySlider1 li>div,#mySlider2 li>div, #mySlider3 li>div{ /*Ширина контейнера с содержимым, чтобы не задавать padding*/
+  /*width: 80%;*/
+  margin: 0 auto;
 }
-.wrapper-product-stock{
+#mySlider1 li>a,#mySlider2 li>a, #mySlider3 li>a{ /*Ширина контейнера с содержимым, чтобы не задавать padding*/
   width: 100%;
-  min-width: 100px;
+  margin: 0 auto;
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
+#mySlider1 li:not(.current_item)>div{/*чтобы содержание неактивных слайдеров не было видно*/
+  /*opacity: 0;*/
+}
+
+#mySlider1 li>div img{
+  max-width: 100%;
+  height: auto;
+}
+#mySlider1 li>a img{
+  max-width: 100%;
+  height: auto;
+}
+
+#mySlider2 li>div img{
+  max-width: 100%;
+  height: auto;
+}
+#mySlider3 li>div img{
+  max-width: 100%;
+  height: auto;
+}
+.vitij{
+  position: relative;
+  width: 35%;
+  display: block;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+}
+.vitij img{
+  width:100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.vitij:before{
+  content: "";
+  display: block;
+  padding-top: 80%;
+}
+
+.wrapper-flex{
   display: flex;
-  justify-content: space-around;
-  &__item{
-    width: 27%;
+  align-items: center;
+  margin-top: 60px;
+}
+.flex{
+  width: 55%;
+}
+.slider-btn{
 
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    &:before{
-      content: "";
-      display: block;
 
-    }
-  }
-  &__mik{
-    &:before{
-      padding-top: 60%;
-    }
-  }
-  &__elek{
-    &:before{
-      padding-top: 60%;
-    }
-  }
-  &__vit{
-    position: relative;
-    top: 20px;
-    &:before{
-      padding-top: 76%;
-    }
+}
+.stock-arrow{
+
+  width: 25%;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  &:before{
+    content: "";
+    display: block;
+    padding-top: 40%;
   }
 }
 
-.wrapper-gift-envelope{
-  width: 20%;
+.stock-arrow-1{
   margin-top: -60px;
+}
+.stock-plus{
+  width: 63px;
+  margin: 0 auto 33px;
+  left: 9px;
+  position: relative;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   &:before{
     content: "";
     display: block;
     padding-top: 100%;
   }
+
 }
 
-.wrapper-gift-termos{
-  width: 50%;
-  min-width: 220px;
+
+.slider-btn{
+  position: absolute;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  margin-left: auto;
-  margin-right: 120px;
-  margin-top: 60px;
+  background-size: contain;
+  width: 32px;
   &:before{
     content: "";
     display: block;
-    padding-top: 55%;
+    padding-top: 80%;
+  }
+}
+.wrapper-slider-stock-1 .slider-btn-next{
+  right: -42px;
+  top: 50%;
+  margin-top: -46px;
+  cursor: pointer;
+}
+.wrapper-slider-stock-1 .slider-btn-prev{
+  left: 0;
+  top: 50%;
+  margin-top: -46px;
+  cursor: pointer;
+}
+
+.wrapper-slider-stock-2 .slider-btn-next{
+  right: -42px;
+  top: 50%;
+  margin-top: -27px;
+  cursor: pointer;
+}
+.wrapper-slider-stock-2 .slider-btn-prev{
+  left: -0px;
+  top: 50%;
+  margin-top: -27px;
+  cursor: pointer;
+}
+
+/*Акция с антрацитом*/
+.wrapper-anracit-product{
+  width: 46%;
+  flex-shrink: 0;
+}
+.anracit-cooking-surfaces{
+
+  //width: 55%;
+  display: flex;
+  &__item{
+    width: calc(50% - 10px);
+    flex-shrink: 0;
+    margin: 10px;
+    &:first-child{
+      margin-left: 22px;
+    }
+    img{
+      max-width: 100%;
+      height: auto;
+    }
+    p{
+      text-align: center;
+    }
   }
 }
 
+.wrapper-slider-stock-3 .slider-btn-next{
+  right: -64px;
+  top: 50%;
+  margin-top: -41px;
+  cursor: pointer;
+}
+.wrapper-slider-stock-3 .slider-btn-prev{
+  left: 0;
+  top: 50%;
+  margin-top: -41px;
+  cursor: pointer;
+}
 
-
-
-
-
-
-
-
-
+.stock-arrow-2{
+  margin-top: -49px;
+}
 
 
 

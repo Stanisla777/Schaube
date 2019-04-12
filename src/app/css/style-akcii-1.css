@@ -1,0 +1,400 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  position: relative;
+  margin: 0;
+  font-family: 'OpenSans', sans-serif;
+  color: #101010;
+  cursor: default;
+  font-size: 16px;
+  line-height: normal;
+  background: #fff;
+  height: auto;
+  min-height: 100%;
+}
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100px;
+}
+.container {
+  position: relative;
+  max-width: 957px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+h1 {
+  font-size: 24px;
+  color: #575b71;
+  margin-top: 30px;
+}
+h2,
+h3 {
+  font-weight: 600;
+  color: #575b71;
+  font-size: 18px;
+  margin-top: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+p {
+  padding: 0 0 12px 0;
+}
+/*Секция банер*/
+.product-stock {
+  margin-top: 50px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+.product-stock__refrigerator {
+  width: 20%;
+  margin-top: 60px;
+}
+.product-stock__refrigerator:before {
+  padding-top: 200%;
+}
+.product-stock__dishwasher {
+  width: 25%;
+}
+.product-stock__dishwasher::before {
+  padding-top: 100%;
+}
+.product-stock__washer {
+  width: 25%;
+}
+.product-stock__washer::before {
+  padding-top: 100%;
+}
+.product-stock__freezer {
+  width: 30%;
+  margin-top: 60px;
+}
+.product-stock__freezer::before {
+  padding-top: 140%;
+}
+.product-stock__item {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.product-stock__item img {
+  width: 100%;
+  height: auto;
+}
+.product-stock__item:before {
+  content: "";
+  display: block;
+}
+.wrapper-presents {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  justify-content: center;
+  top: 57%;
+  left: -20px;
+}
+.wrapper-presents__item {
+  width: 22%;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.wrapper-presents__item:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.gft {
+  width: 100%;
+  height: 100px;
+  background: url("../img3/map.jpg") center no-repeat;
+  background-size: cover;
+}
+.product-stock-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 66%;
+  height: 99px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 70px auto 50px;
+}
+.product-stock-time__date {
+  font-size: 22px;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  color: #d0d1da;
+  text-align: center;
+  line-height: 23px;
+  animation: blur 5s ease-out infinite;
+}
+.product-stock-time:before {
+  padding-top: 60%;
+}
+.product-stock-time img {
+  width: 100%;
+  height: 100%;
+}
+@keyframes blur {
+  from {
+    text-shadow: 0 0 1px rgba(250, 250, 250, 0.03), 0 0 2px #969696, 0 0 3px #969696, 0 0 3px #969696, 0 0 3px #969696, 0 0 3px #969696, 0 0 3px #969696, 0 0 3px #969696, 0 0 4px #969696, 0 0 4px #969696, 0 0 4px #7B96B8, 0 0 5px #7B96B8, 0 2px 6px #7B96B8, 0 2px 6px #7B96B8, 0 2px 6px #7B96B8, 0 2px 6px #7B96B8;
+  }
+}
+.gift-category-list {
+  list-style: none;
+  margin-top: 15px!important;
+  padding: 0!important;
+}
+.gift-category-list li {
+  font-size: 16px;
+  display: flex;
+  margin-bottom: 10px;
+}
+.gift-category-list li:before {
+  content: '';
+  display: block;
+  width: 19px;
+  height: 25px;
+  background: url(../img3/GiftGalka.png) center no-repeat;
+  background-size: contain;
+  margin-right: 6px;
+  flex-shrink: 0;
+}
+.wrapper-home-appliances__item {
+  padding: 30px 10px 40px 10px;
+  box-shadow: 0 0 5px 2px #c7c3c3;
+  background-color: rgba(199, 193, 193, 0.1);
+  margin-bottom: 30px;
+}
+.wrapper-gift-conditions {
+  margin-top: 30px;
+}
+.wrapper-steps-gift {
+  display: flex;
+  margin-top: 15px;
+}
+.steps-gift {
+  padding: 50px 10px 25px 10px;
+  box-shadow: 0 0 5px 2px #c7c3c3;
+  background-color: rgba(199, 193, 193, 0.1);
+  margin-bottom: 14px;
+}
+.steps-gift__img {
+  width: 90%;
+  position: relative;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.steps-gift__img:before {
+  content: "";
+  display: block;
+  padding-top: 90%;
+}
+.steps-gift__description {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px!important;
+  padding: 0!important;
+  line-height: 21px;
+  letter-spacing: -0.2px;
+}
+.steps-gift__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  margin-left: -21px;
+  width: 43px;
+  height: 43px;
+  background: url(../img3/Obvodka.png) center no-repeat;
+  background-size: contain;
+}
+.wrapper-gift-conditions .row-4-column {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -6px;
+  margin-right: -12px;
+}
+.wrapper-gift-conditions .row-4-column__col {
+  position: relative;
+  width: calc(23% - 8px*2);
+  margin-left: 7px;
+  margin-right: 7px;
+}
+.shopping-wish {
+  font-size: 20px;
+  font-weight: 600;
+}
+.gift-slogan {
+  font-weight: 600;
+  font-size: 17px;
+}
+/*Акция 3*/
+/*Класс, который не повторяется*/
+.product-stock-dishes {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.product-stock-dishes__wrapper {
+  width: 22%;
+  min-width: 100px;
+}
+.product-stock-dishes__item {
+  width: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.product-stock-dishes__item:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.product-stock-dishes__box {
+  width: 24%;
+  min-width: 110px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.product-stock-dishes__box:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.product-stock-dishes__box img:first-child {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.product-stock-dishes__box img:nth-child(2) {
+  position: absolute;
+  width: 73%;
+  height: auto;
+  left: 13%;
+  right: 0;
+  top: 38%;
+  bottom: 0;
+}
+.product-stock-dishes__gift {
+  width: 80%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.product-stock-dishes__gift:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.product-stock-dishes__arrow {
+  width: 20%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.product-stock-dishes__arrow:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+/*Акция номер два*/
+/*Класс, который не повторяется*/
+.wrapper-product-stock {
+  width: 100%;
+  min-width: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+.wrapper-product-stock__item {
+  width: 27%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.wrapper-product-stock__item:before {
+  content: "";
+  display: block;
+}
+.wrapper-product-stock__mik:before {
+  padding-top: 60%;
+}
+.wrapper-product-stock__elek:before {
+  padding-top: 60%;
+}
+.wrapper-product-stock__vit {
+  position: relative;
+  top: 20px;
+}
+.wrapper-product-stock__vit:before {
+  padding-top: 76%;
+}
+.wrapper-gift-envelope {
+  width: 20%;
+  margin-top: -60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrapper-gift-envelope:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.wrapper-gift-termos {
+  width: 50%;
+  min-width: 220px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: 120px;
+  margin-top: 60px;
+}
+.wrapper-gift-termos:before {
+  content: "";
+  display: block;
+  padding-top: 55%;
+}
