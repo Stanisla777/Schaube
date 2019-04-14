@@ -1,0 +1,88 @@
+@media screen and (max-width: 1260px){
+    .stock-plus{
+        left: 58px;
+    }
+    #mySlider1, #mySlider2, #mySlider3{
+        left: 120px;
+    }
+
+    .wrapper-slider-stock-1 .slider-btn-next,
+    .wrapper-slider-stock-2 .slider-btn-next{
+        right: 50px;
+    }
+
+}
+
+@media screen and (max-width: 650px){
+    .stock-plus{
+        left: 58px;
+    }
+
+    .wrapper-flex{
+        flex-direction: column;
+    }
+    .stock-arrow-1{
+        margin-top: 28px;
+        transform: rotate(90deg);
+        margin-bottom: 36px;
+    }
+
+    #mySlider1, #mySlider2, #mySlider3 {
+        left: 115px;
+    }
+    .flex{
+        width: 100%;
+    }
+    .stock-plus{
+        left: 0;
+    }
+    #mySlider1 li, #mySlider2 li, #mySlider3 li{
+        width: 34%;
+    }
+
+
+
+    .wrapper-anracit-product{
+        width: 100%;
+    }
+    .anracit-cooking-surfaces__item:first-child{
+        margin-left: 0;
+    }
+    .stock-arrow-2{
+        margin-top: 28px;
+        transform: rotate(90deg);
+        margin-bottom: 36px;
+        margin-left: 0;
+    }
+
+
+
+    .wrapper-slider-stock-1 .slider-btn-prev {
+        left: 0;
+        top: 50%;
+        margin-top: -32px;
+    }
+
+    .wrapper-slider-stock-1 .slider-btn-next {
+        right: 0;
+        top: 50%;
+        margin-top: -32px;
+    }
+
+    .wrapper-slider-stock-2 .slider-btn-next {
+        right: -4px;
+    }
+
+    .anracit-cooking-surfaces{
+        width: 93%;
+        margin: 0 auto;
+    }
+
+    .wrapper-slider-stock-3 .slider-btn-next{
+        right: -7px;
+    }
+
+
+
+
+}

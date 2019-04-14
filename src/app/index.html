@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
-    <link rel="stylesheet" href="css/style.css">
+
     <link rel="stylesheet" href="css/mediaakcii.css">
     <link href="css/animated-slider-css.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaakcii2.css">
+
 </head>
 <body>
 
@@ -41,7 +44,7 @@
                                     <p class="your-name">SLK_GB6220</p>
                                 </a>
                             </li>
-                            <li class="current_item">
+                            <li id="ty" class="current_item">
                                 <a href="https://yandex.ru">
                                     <img src="img4/VarSLK_GB6520.jpg" alt="">
                                     <p class="your-name">SLK_GB6520</p>
@@ -116,8 +119,7 @@
 
             </div>
 
-            <h2 class="h2-title">Закажите одну из следующих имоделей варочной поверхноси и духового шкаф и получите в
-                подарок вытяжку</h2>
+            <h2 class="h2-title">Закажите в ретро-стиле варочную поверхность с духовым шкафом и получите в подарок вытяжку</h2>
 
             <div class="wrapper-flex">
 
@@ -206,6 +208,20 @@
 
     $(document).ready(function() {
 
+
+        //Определяем координатя
+        // var offsets = $('.mySlider1 li#ty').css('border','1px solid').offset();
+        //
+        // //
+        // console.log(offsets);
+        //
+        // // $('.wrapper-slider-stock-1 .slider-btn-next').offset({left:offsets.left});
+        // // var re = $('.wrapper-slider-stock-1 .slider-btn-next').offset().left;
+        // var e = $('.wrapper-slider-stock-1 .slider-btn-next').offset({left:offsets.left});
+
+
+
+
         $(".wrapper-slider-stock-1").swipe({
             swipeLeft: function (event, direction, distance, duration, fingerCount) {
                 $('.btn_next1').click();
@@ -254,10 +270,17 @@
             visibleItems: 3,
             infiniteScroll: true,
             willChangeCallback: function (obj, item) {//выполнение чего-либо при загрузке слайда
-//                middle_current_item()
+                // var offsets = $('.mySlider1 #ty').css('border','1px solid').offset();
+                // // var width = $('.mySlider1 li.current_item').outerWidth();
+                // console.log(offsets);
+                // $('.wrapper-slider-stock-1 .slider-btn-next').offset({left:635});
+                //
+                // console.log(offsets);
+
+
             },
             changedCallback: function (obj, item) {//выполнение чего-либо при отработке слайда
-//                $('.current_item').css('left',0);
+
             }
         });
 
