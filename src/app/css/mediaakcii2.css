@@ -8,7 +8,11 @@
 
     .wrapper-slider-stock-1 .slider-btn-next,
     .wrapper-slider-stock-2 .slider-btn-next{
-        right: 50px;
+        right: -51px;
+    }
+
+    .wrapper-slider-stock-3 .slider-btn-next{
+        right: -57px;
     }
 
 }
@@ -35,6 +39,8 @@
     }
     .stock-plus{
         left: 0;
+        width: 40px;
+        margin: 0 auto 43px;
     }
     #mySlider1 li, #mySlider2 li, #mySlider3 li{
         width: 34%;
